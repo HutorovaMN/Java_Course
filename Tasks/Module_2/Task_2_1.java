@@ -3,10 +3,7 @@ package Module_2;
 import java.util.Scanner;
 
 public class Task_2_1 {
-	/*
-	 *В массив A [N] занесены натуральные числа. Найти сумму тех элементов, которые кратны данному К.
-	 */
-
+	
 	public static void main(String[] args) {
 		try (Scanner scan = new Scanner(System.in)) {
 			System.out.println("Enter K");
