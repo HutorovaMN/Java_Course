@@ -3,7 +3,7 @@ package Module_2;
 import java.util.Scanner;
 
 public class Task_2_4 {
-	
+	/*Даны действительные числа а1 ,а2 ,..., аn . Поменять местами наибольший и наименьший элементы.*/
 	public static void main(String[] args) {
 		try (Scanner scan = new Scanner(System.in)) {
 			System.out.println("Enter n");
