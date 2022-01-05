@@ -3,7 +3,8 @@ package Module_2;
 import java.util.Scanner;
 
 public class Task_2_2 {
-	
+	/*Дана последовательность действительных чисел а1 ,а2 ,..., ап. Заменить все ее члены, большие данного Z, этим
+числом. Подсчитать количество замен.*/
 	public static void main(String[] args) {
 		try (Scanner scan = new Scanner(System.in)) {
 			System.out.println("Enter n");
