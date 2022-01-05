@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 
 public class Task_2_3 {
-	/*ƒан массив действительных чисел, размерность которого N. ѕодсчитать, сколько в нем отрицательных,
-положительных и нулевых элементов.*/
-
+	
 	public static void main(String[] args) {
 		try (Scanner scan = new Scanner(System.in)) {
 			System.out.println("Enter N");
