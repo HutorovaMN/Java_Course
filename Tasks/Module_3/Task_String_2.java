@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Task_String_2 {
 	/*
-	 * В строке вставить после каждого символа 'a' символ 'b'.
+	 * Р’ СЃС‚СЂРѕРєРµ РІСЃС‚Р°РІРёС‚СЊ РїРѕСЃР»Рµ РєР°Р¶РґРѕРіРѕ СЃРёРјРІРѕР»Р° 'a' СЃРёРјРІРѕР» 'b'.
 	 */
 	public static void main(String[] args) {
 		String str = " ahgfhgfa aghha aaa";
