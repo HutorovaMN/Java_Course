@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Task_String_3 {
 	/*
-	 * Проверить, является ли заданное слово палиндромом.
+	 *РџСЂРѕРІРµСЂРёС‚СЊ, СЏРІР»СЏРµС‚СЃСЏ Р»Рё Р·Р°РґР°РЅРЅРѕРµ СЃР»РѕРІРѕ РїР°Р»РёРЅРґСЂРѕРјРѕРј.
 	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
