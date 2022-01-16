@@ -7,18 +7,17 @@ import java.util.Scanner;
 
 public class Task_String_4 {
 	/*
-	 * С помощью функции копирования и операции конкатенации составить из частей
-	 * слова “информатика” слово “торт”.
+	 *РЎ РїРѕРјРѕС‰СЊСЋ С„СѓРЅРєС†РёРё РєРѕРїРёСЂРѕРІР°РЅРёСЏ Рё РѕРїРµСЂР°С†РёРё РєРѕРЅРєР°С‚РµРЅР°С†РёРё СЃРѕСЃС‚Р°РІРёС‚СЊ РёР· С‡Р°СЃС‚РµР№ СЃР»РѕРІР° вЂњРёРЅС„РѕСЂРјР°С‚РёРєР°вЂќ СЃР»РѕРІРѕ вЂњС‚РѕСЂС‚вЂќ.
 	 */
 	public static void main(String[] args) {
-		String s = "информатика";
+		String s = "ГЁГ­ГґГ®Г°Г¬Г ГІГЁГЄГ ";
 		List<Character> list = new LinkedList<>();
 		for (char ch : s.toCharArray()) {
 			list.add(ch);
 		}
-		int letter1 = list.indexOf('т');
-		int letter2 = list.indexOf('о');
-		int letter3 = list.indexOf('р');
+		int letter1 = list.indexOf('ГІ');
+		int letter2 = list.indexOf('Г®');
+		int letter3 = list.indexOf('Г°');
 		System.out.println(String.valueOf(list.get(letter1)) + list.get(letter2) + list.get(letter3) + list.get(letter1));
 
 	}
