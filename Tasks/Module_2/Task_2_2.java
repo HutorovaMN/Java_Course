@@ -1,40 +1,40 @@
 package Module_2;
 
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Task_2_2 {
 	/*
-	 * Дана последовательность действительных чисел а1 ,а2 ,..., ап. Заменить все ее члены, большие данного Z, этим
-числом. Подсчитать количество замен.
+	 * Р”Р°РЅР° РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅС‹С… С‡РёСЃРµР» Р°1 ,Р°2 ,..., Р°Рї. Р—Р°РјРµРЅРёС‚СЊ РІСЃРµ РµРµ
+	 * С‡Р»РµРЅС‹, Р±РѕР»СЊС€РёРµ РґР°РЅРЅРѕРіРѕ Z, СЌС‚РёРј С‡РёСЃР»РѕРј. РџРѕРґСЃС‡РёС‚Р°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РјРµРЅ.
 	 */
-	public static void main(String[] args) {
-		try (Scanner scan = new Scanner(System.in)) {
-			System.out.println("Enter n");
-			int n = scan.nextInt();
-			int[] array = new int[n];
-			int max = Integer.MIN_VALUE;
-			int min = Integer.MAX_VALUE;
-			int maxi = 0;
-			int mini = 0;
-			for (int i = 0; i < array.length; i++) {
-				array[i] = scan.nextInt();
-				if (array[i] > max) {
-					max = array[i];
-					maxi = i;
-				}
-				if (array[i] < min) {
-					min = array[i];
-					mini = i;
-				}
-			}
-			int temp = array[maxi];
-			array[maxi] = array[mini];
-			array[mini] = temp;
-			for (int i = 0; i < array.length; i++) {
-				System.out.print(array[i] + " ");
-			}
-		}
 
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter n:");
+		int n = scan.nextInt();
+		System.out.println("Enter k:");
+		int k = scan.nextInt();
+		matrix(n, k);
 	}
 
+	public static void matrix(int n, int k) {
+		int[] array = new int[n];
+		Random ran = new Random();
+		for (int i = 0; i < array.length; i++) {
+			array[i] = ran.nextInt(10);
+		}
+		System.out.println(Arrays.toString(array));
+		System.out.println();
+		int count = 0;
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] > k) {
+				array[i] = k;
+				count++;
+			}
+		}
+		System.out.println(Arrays.toString(array));
+		System.out.println(count);
+	}
 }
